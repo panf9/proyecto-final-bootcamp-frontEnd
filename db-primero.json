@@ -1,0 +1,213 @@
+{
+    "categorias": [
+        {
+            "name":"Mobiles",
+            "id": 1,
+            "image": ""
+        },
+        {
+            "name":"Televisions",
+            "id": 2,
+            "image": ""
+        },
+        {
+            "name":"Washing Machine",
+            "id": 3,
+            "image": ""
+        },
+        {
+            "name":"Air Coolers",
+            "id": 4,
+            "image": ""
+        },
+        {
+            "name":"Refrigrators",
+            "id": 4,
+            "image": ""
+        }
+    ],
+    "productos": [
+        {
+            "name":"Apple IPhone 14 Pro Max, 64GB, White - Fully Unlocked",
+            "id": 11,
+            "brand": "Apple",
+            "category": "",
+            "sku": "APL34TY567",
+            "condition": "new",
+            "image": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/30-large_default/hummingbird-printed-t-shirt.jpg"
+        },
+        {
+            "name":"Apple Watch Series 8 GPS 41mm Aluminum",
+            "id": 12,
+            "brand": "Apple",
+            "category": "",
+            "sku": "APL34TY567",
+            "condition": "new",
+            "image": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/37-large_default/brown-bear-printed-sweater.jpg"
+        },
+        {
+            "name":"Wireless Earbud Bluetooth Earphones With Deep Bass",
+            "id": 13,
+            "brand": "Bose",
+            "category": "",
+            "sku": "EARBUD8476",
+            "condition": "new",
+            "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/52-large_default/the-best-is-yet-to-come-framed-poster.jpg",
+            "imagen_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/53-large_default/the-best-is-yet-to-come-framed-poster.jpg"
+        },
+        {
+            "name":"MacBook Pro Laptop M2 Pro Chip With 10‑Core CPU",
+            "id": 14,
+            "brand": "Apple",
+            "category": "",
+            "sku": "MAC85SKD95",
+            "condition": "new",
+            "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/60-large_default/the-adventure-begins-framed-poster.jpg",
+            "imagen_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/61-large_default/the-adventure-begins-framed-poster.jpg"
+        },
+        {
+            "name":"Tone Free Earbuds With ANC, Prestigious British Meridian",
+            "id": 15,
+            "brand": "Nikon",
+            "category": "",
+            "sku": "APL67RT789",
+            "condition": "new",
+            "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/104-large_default/today-is-a-good-day-framed-poster.jpg",
+            "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/105-large_default/today-is-a-good-day-framed-poster.jpg",
+            "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/106-large_default/today-is-a-good-day-framed-poster.jpg"
+        },
+        {
+            "name":"Apple IPad Air 5th Generation Wi-Fi And Cellula",
+            "id": 16,
+            "brand": "Sony",
+            "category": "",
+            "sku": "APL34TY567",
+            "condition": "new",
+            "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/122-large_default/hummingbird-printed-t-shirt.jpg",
+            "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/123-large_default/hummingbird-printed-t-shirt.jpg",
+            "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/124-large_default/hummingbird-printed-t-shirt.jpg"
+        },
+        {
+            "name":"Newest PlayStation PS5 Gaming Console Disc Version Bundle",
+            "id": 17,
+            "brand": "Asus",
+            "category": "",
+            "sku": "PLY45GT786",
+            "condition": "new",
+            "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/149-large_default/hummingbird-printed-t-shirt.jpg",
+            "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/150-large_default/hummingbird-printed-t-shirt.jpg",
+            "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/150-large_default/hummingbird-printed-t-shirt.jpg"
+        },
+        {
+            "name":"Samsung Buds2.0 Pro Galaxy MM-R4 NZAWXAR",
+            "id": 18,
+            "brand": "Samsung",
+            "category": "BUD66R4567",
+            "sku": "",
+            "stock": 100,
+            "condition": "new",
+            "desciption_short": "Very impressive. Whether you're on a crowded bus or on a plane, the Buds 2 Pro ANC will deliver the kind of surrounding world silencing you'd want, so you can enjoy your music fully in peace. Of course, you can turn off ANC and switch to Ambient sound if you actually want to hear what's happening around you.",
+            "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+            "symbol": "$",
+            "price": "81.56",
+            "images": [
+                {
+                    "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/179-large_default/hummingbird-printed-t-shirt.jpg",
+                    "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/180-large_default/hummingbird-printed-t-shirt.jpg",
+                    "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/181-large_default/hummingbird-printed-t-shirt.jpg"
+                },
+                {
+                    "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/182-large_default/hummingbird-printed-t-shirt.jpg",
+                    "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/183-large_default/hummingbird-printed-t-shirt.jpg",
+                    "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/184-large_default/hummingbird-printed-t-shirt.jpg"
+                },
+                {
+                    "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/185-large_default/hummingbird-printed-t-shirt.jpg",
+                    "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/186-large_default/hummingbird-printed-t-shirt.jpg",
+                    "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/187-large_default/hummingbird-printed-t-shirt.jpg"
+                }
+            ]
+
+        },
+        {
+            "name":"",
+            "id": 19,
+            "brand": "",
+            "category": "",
+            "sku": "",
+            "condition": "new",
+            "image_1": "",
+            "image_2": "",
+            "image_3": ""
+        },
+        {
+            "name":"",
+            "id": 20,
+            "brand": "",
+            "category": "",
+            "sku": "",
+            "condition": "new",
+            "image_1": "",
+            "image_2": "",
+            "image_3": ""
+        },
+        {
+            "name":"",
+            "id": 21,
+            "brand": "",
+            "category": "",
+            "sku": "",
+            "condition": "new",
+            "image_1": "",
+            "image_2": "",
+            "image_3": ""
+        },
+        {
+            "name":"",
+            "id": 22,
+            "brand": "",
+            "category": "",
+            "sku": "",
+            "condition": "new",
+            "image_1": "",
+            "image_2": "",
+            "image_3": ""
+        },
+        {
+            "name":"",
+            "id": 23,
+            "brand": "",
+            "category": "",
+            "sku": "",
+            "condition": "new",
+            "image_1": "",
+            "image_2": "",
+            "image_3": ""
+        },
+        {
+            "name":"",
+            "id": 24,
+            "brand": "",
+            "category": "",
+            "sku": "",
+            "condition": "new",
+            "image_1": "",
+            "image_2": "",
+            "image_3": ""
+        },
+        {
+            "name":"",
+            "id": 0,
+            "brand": "",
+            "category": "",
+            "sku": "",
+            "condition": "new",
+            "image_1": "",
+            "image_2": "",
+            "image_3": ""
+        }
+    ],
+    "usuarios": [
+
+    ]
+}
