@@ -1,8 +1,6 @@
 # INFORMACIÓN DEL PROYECTO
 
-En este proyecto vamos a intentar clonar el maquetado de la página _[plantilla tienda en linea](1)_
-
-[1]: https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/en/17-washing-machine
+En este proyecto vamos a intentar clonar el maquetado de la página \_[plantilla tienda en linea](#https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/en/17-washing-machine)
 
 ## Theme Customizer
 
