@@ -5,6 +5,7 @@ import { LiaShippingFastSolid } from "react-icons/lia";
 import { FaRegHeart } from "react-icons/fa";
 import { TfiShoppingCartFull } from "react-icons/tfi";
 import { RxLoop } from "react-icons/rx";
+import MyAccountPage from "./pages/MyAccountPage";
 
 
 function App() {
@@ -46,7 +47,7 @@ function App() {
               <input 
                 type="text" 
                 placeholder="Search Product Here..."
-                className="w-[650px] py-3 px-4 rounded-l-3xl"
+                className="w-[650px] py-3 px-4 rounded-l-3xl outline-0"
               />
               <button 
                 type="submit"
@@ -55,13 +56,23 @@ function App() {
                 Search
               </button>
             </div>
-            <div className="flex justify-between item-center gap-3">
-              <RxLoop />
-              <FaRegHeart />
-              <TfiShoppingCartFull />
+            <div className="flex justify-between item-center gap-4">
+              <div className="flex">
+                <RxLoop className="pt-1" size='2rem' />
+                <span className="bg-[#303840] text-white rounded-full h-5 w-5 text-center text-sm">0</span>
+              </div>
+              <div className="flex">
+                <FaRegHeart  className="pt-1" size='2rem'/>
+                <span className="bg-[#303840] text-white rounded-full h-5 w-5 text-center text-sm">0</span>
+              </div>
+              <div className="flex">
+                <TfiShoppingCartFull className="pt-1" size='2rem' />
+                <span className="bg-[#303840] text-white rounded-full h-5 w-5 text-center text-sm">0</span>
+              </div>
             </div>
           </div>
       </header>
+      <MyAccountPage />
     </>
   )
 }
