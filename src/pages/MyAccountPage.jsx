@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const MyAccountPage = () => {
   return (
@@ -33,7 +34,7 @@ const MyAccountPage = () => {
             </div>
             <span>Forgot your password?</span>
             <input type="submit" name="" value="Sign In" className="bg-[#FAD505] h-12 w-28 rounded-md"/>
-            <span>No account? Create one here</span>
+            <Link to='registration'>No account? Create one here</Link>
           </form>
         </div>
       </div>
