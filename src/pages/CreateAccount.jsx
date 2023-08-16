@@ -5,7 +5,7 @@ const CreateAccount = () => {
   return (
     <>
     <div>
-        <h1 className="text-[18px] font-semibold mt-6 mb-1">Create An Account</h1>
+        <h1 className="text-[18px] font-[500] mt-6 mb-1">Create An Account</h1>
         <hr />
     </div>
     <div className="flex flex-col items-center py-12 p-8  border mt-5">

@@ -5,6 +5,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { TfiShoppingCartFull } from "react-icons/tfi";
 import { RxLoop } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import { IoMenu } from "react-icons/io5";
 
 const Header = () => {
   return (
@@ -12,34 +13,34 @@ const Header = () => {
       <header className="bg-[#FAD505]">
           <nav className="flex justify-between w-[1170px] mx-auto py-2">
             <div>
-              <span>
+              <span className="font-[300]">
               Get Up To 50% OFF New Season Styles, Limited Time Only.
               </span>
             </div>
             <div className="flex justify-beteween gap-5 px-2">
               <div className="flex justify-beteween items-center gap-1">
                 <IoLocationOutline />
-                <Link to="location">Store Locator </Link>
+                <Link to="location" className="font-[300]">Store Locator </Link>
               </div>
               <div>
                 |
               </div>
               <div className="flex justify-beteween items-center gap-1">
                 <LiaShippingFastSolid />
-                <Link to='tracking'> Track Your Order </Link>
+                <Link to='tracking' className="font-[300]"> Track Your Order </Link>
               </div>
               <div>
                 |
               </div>
               <div className="flex justify-beteween items-center gap-1">
                 <VscAccount />
-                <Link to="my-account">My Account</Link>
+                <Link to="my-account" className="font-[300]">My Account</Link>
               </div>
             </div>
           </nav>
           <hr />
           <div className="w-[1170px] mx-auto flex justify-between py-4">
-            <img src="https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/img/logo-1680764769.jpg" alt="logo prinicipal" />
+            <Link><img src="https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/img/logo-1680764769.jpg" alt="logo prinicipal" /></Link>
             <div>
               <input 
                 type="text" 
@@ -69,6 +70,26 @@ const Header = () => {
             </div>
           </div>
       </header>
+      <div className="flex py-3 w-[1170px] mx-auto">
+        {/* Menudo deplegable */}
+        <div className="flex items-center gap-1">
+          <IoMenu />
+          <span className="font-[400]">Browse Categories</span>
+        </div>
+        <div className="mx-8">
+          |
+        </div>
+        <div>
+          <ul className="flex gap-10 font-[400]">
+            <li>Categoria 1</li>
+            <li>Categoria 2</li>
+            <li>Categoria 3</li>
+            <li>Categoria 4</li>
+            <li>Categoria 5</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
     </>
   )
 }

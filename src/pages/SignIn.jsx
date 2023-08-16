@@ -4,7 +4,7 @@ const SignIn = () => {
   return (
     <>
       <div>
-          <h1 className="text-[18px] font-semibold mt-6 mb-1">Log in To Your Account</h1>
+          <h1 className="text-[18px] font-[500] mt-6 mb-1">Log in To Your Account</h1>
           <hr />
       </div>
 
