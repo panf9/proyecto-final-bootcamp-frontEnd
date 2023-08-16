@@ -15,15 +15,7 @@ const AccountLayout = () => {
           </div>
         </div>
         <div className="w-7/12">
-          <div>
-            <h1 className="text-[18px] font-semibold mt-6 mb-1">Log in To Your Account</h1>
-            <hr />
-          </div>
-
-          <div className="border mt-5">
-            <Outlet />          
-          </div>
-        {/* </div> */}
+          <Outlet />
       </div>
     </div>
   )
