@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-   <>
-    <header className="bg-[#FAD505]">
+    <>
+      <header className="bg-[#FAD505]">
           <nav className="flex justify-between w-[1170px] mx-auto py-2">
             <div>
               <span>
@@ -69,7 +69,7 @@ const Header = () => {
             </div>
           </div>
       </header>
-   </>
+    </>
   )
 }
 
