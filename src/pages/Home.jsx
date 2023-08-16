@@ -10,6 +10,7 @@ const Home = () => {
         title3='EDITION'
         oldPrice='479'
         newPrice='349'
+        img='djsid'
       />
     </>
   )
