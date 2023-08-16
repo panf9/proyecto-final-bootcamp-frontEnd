@@ -1,8 +1,8 @@
 
-const Slider = (text, title1, title2, title3, oldPrice, newPrice, url) => {
+const Slider = (text, title1, title2, title3, oldPrice, newPrice, img) => {
   return (
     <div className="animate-[wiggle_1s_ease-in-out_infinite]">
-      <div className=`mt-5 w-[1170px] mx-auto pt-10 pl-20 bg-cover bg-[url(${url})]´ >
+      <div className={`mt-5 w-[1170px] mx-auto pt-10 pl-20 bg-cover bg-[url(${img})]`} >
         <p className="text-[#0961B3] font-[400] text-xl">
           {text}
         </p>
