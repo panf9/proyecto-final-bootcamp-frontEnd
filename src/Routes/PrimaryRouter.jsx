@@ -5,8 +5,7 @@ import SignIn from "../pages/SignIn";
 import PassRecovery from "../pages/PassRecovery";
 import Home from "../pages/Home";
 import HomeLayout from "../Layout/HomeLayout";
-
-
+import CategoriesPage from "../pages/CategoriesPage";
 
 export const PrimaryRouter = createBrowserRouter([
   {
@@ -15,7 +14,11 @@ export const PrimaryRouter = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />
+        element: <Home />,
+      },
+      {
+        path: '/:category',
+        element: <CategoriesPage />
       },
       {
         path: '/my-account',
@@ -35,6 +38,7 @@ export const PrimaryRouter = createBrowserRouter([
           }
         ]
       },
+
     ]
   },  
 ])

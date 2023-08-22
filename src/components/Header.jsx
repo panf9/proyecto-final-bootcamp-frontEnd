@@ -6,8 +6,24 @@ import { TfiShoppingCartFull } from "react-icons/tfi";
 import { RxLoop } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
+import { useEffect, useState } from "react";
+import CategoriesPage from "../pages/CategoriesPage";
 
 const Header = () => {
+  const [categories, setCategories] = useState([])
+
+  const fetchCatgeries = async () => {
+    const url = 'http://localhost:3000/categorias'
+    const categories = await fetch(url)
+    const data = await categories.json()
+    setCategories(data)
+    // console.log(data);
+  }
+
+  useEffect(() => {
+    fetchCatgeries()
+  }, [])
+
   return (
     <>
       <header className="bg-[#FAD505]">
@@ -72,21 +88,46 @@ const Header = () => {
       </header>
       <div className="flex py-3 w-[1170px] mx-auto">
         {/* Menudo deplegable */}
-        <div className="flex items-center gap-1">
-          <IoMenu />
-          <span className="font-[400]">Browse Categories</span>
+        <div className="flex flex-col gap-1 group absolute">
+          <div className="flex items-center">
+            <IoMenu />
+            <span className="font-[400]">Browse Categories</span>
+          </div>
+          <div className="hidden relative rounded-md group-hover:block">
+            <ul className="w-48">
+              <li className="bg-[#FAD505] flex flex-col ">
+                {
+                  categories.map( category => {
+                    return (
+                      <Link 
+                        to={category.name} 
+                        element={<CategoriesPage />} 
+                        key={category.id}
+                        className="hover:bg-yellow-200 hover:rouded-2 hover:border hover:text-[19px] text-lg pl-4 py-2 text-[#303840]"
+                      >
+                        {category.name}
+                      </Link>
+                    )
+                  })
+                }
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="mx-8">
+        <div className="ml-44 mr-8">
           |
         </div>
-        <div>
-          <ul className="flex gap-10 font-[400]">
-            <li>Categoria 1</li>
-            <li>Categoria 2</li>
-            <li>Categoria 3</li>
-            <li>Categoria 4</li>
-            <li>Categoria 5</li>
-          </ul>
+        <div className="flex gap-10 font-[400]">
+            {
+              categories.map( category => {
+                return (
+                  <Link to={category.name} element={<CategoriesPage />} key={category.id}>
+                      {category.name}
+                  </Link>
+                )
+              }
+              )
+            }
         </div>
       </div>
       <hr />
