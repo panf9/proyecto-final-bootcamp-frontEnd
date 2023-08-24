@@ -1,7 +1,83 @@
-import { Link } from "react-router-dom"
+import { useState } from "react"
+import { Link, useNavigate } from "react-router-dom"
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
+const MySwal = withReactContent(Swal)
 
 const CreateAccount = () => {
+  const [form, setForm] = useState({
+    name: '',
+    last_name: '',
+    email: '',
+    password: '',
+    birthDate: ''
+  })
+  const navigate = useNavigate()
+
+  const hanndleChange = (event) => {
+    const value = event.target.value
+    const name  = event.target.name 
+
+    setForm({ ...form, [name]: value})
+    console.log(form);
+  }
+
+  const verifyEmail = async (url) => {
+    const email = form.email
+
+    const response = await fetch(`${url}?email=${email}`)
+    const data = await response.json()
+    console.log("En el everifuEmail", data);
+    return data
+  }
+
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+
+    const url = 'http://localhost:3000/usuarios'
+
+    const detectedUser = await verifyEmail(url)
+    console.log("detected User", detectedUser);
+
+    if (detectedUser.length === 1) {
+      Swal.fire({
+        title: 'Esta dirección de correo electrónico ya existe',
+        icon: 'warning',
+        confirmButtonColor: '#FAD505',
+        confirmButtonText: 'Iniciar sesión'
+      }).then(() => {
+        navigate('/my-account')
+      })
+    }else{
+      const user = {
+        ...form, 
+        id: crypto.randomUUID()
+      }
+  
+      const options = {
+        method: 'POST',
+        body: JSON.stringify(user),
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      }
+  
+      const response = await fetch(url, options)
+      const data = await response.json()
+      console.log(data);
+
+      MySwal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Usuario creado correctamente',
+        showConfirmButton: false,
+        timer: 1500
+      })
+    }
+
+  }
+
   return (
     <>
     <div>
@@ -10,26 +86,55 @@ const CreateAccount = () => {
     </div>
     <div className="flex flex-col items-center py-12 p-8  border mt-5">
       <p>Already have an account? <Link to='/my-account' className="underline">Log in instead!</Link></p>
-      <form className="flex flex-col gap-5 my-3 items-end">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-5 my-3 items-end">
         <div>
           <label>First name</label>
-          <input type="text" name="" required className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"/>
+          <input 
+            type="text" 
+            name="name" 
+            required 
+            onChange={hanndleChange}
+            className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"
+          />
         </div>
         <div>
           <label>Last name</label>
-          <input type="text" name="" required className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"/>
+          <input 
+            type="text" 
+            name="last_name" 
+            required 
+            onChange={hanndleChange}
+            className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"
+          />
         </div>
         <div>
           <label>Email</label>
-          <input type="email" name="" required className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"/>
+          <input 
+            type="email" 
+            name="email" 
+            required 
+            onChange={hanndleChange}
+            className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"
+          />
         </div>
         <div>
           <label>Password</label>
-          <input type="password" name="" required className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"/>
+          <input 
+            type="password" 
+            name="password" 
+            required 
+            onChange={hanndleChange}
+            className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"
+          />
         </div>
         <div>
           <label>Birthdate</label>
-          <input type="date" name="" className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"/>
+          <input 
+            type="date" 
+            name="birthDate" 
+            onChange={hanndleChange}
+            className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"
+          />
         </div>
         
         <input type="submit" value="Save" className="bg-[#FAD505] h-12 w-24 rounded-md" />
