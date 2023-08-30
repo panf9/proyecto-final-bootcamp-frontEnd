@@ -28,7 +28,7 @@ const CreateAccount = () => {
 
     const response = await fetch(`${url}?email=${email}`)
     const data = await response.json()
-    console.log("En el everifuEmail", data);
+    // console.log("En el everifuEmail", data);
     return data
   }
 

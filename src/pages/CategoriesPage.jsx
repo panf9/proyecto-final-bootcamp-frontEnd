@@ -37,7 +37,7 @@ const CategoriesPage = () => {
             <hr className="mb-2"/>
           </div>
           <Product 
-          products={products} 
+          products={products}
         />
       </div>
     </div>

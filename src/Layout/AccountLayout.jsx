@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom"
 
 
-const AccountLayout = () => {
+const AccountLayout = (props) => {
   return (
     <div className="flex justify-center mx-auto">
         <div className="w-2/12 my-7 mr-5 hidden lg:block">
@@ -16,6 +16,7 @@ const AccountLayout = () => {
         </div>
         <div className="w-7/12">
           <Outlet />
+          {/* {props.children} */}
       </div>
     </div>
   )

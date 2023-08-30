@@ -13,7 +13,7 @@ const CategorieLayout = () => {
             <hr />
           </div>
         </div>
-        <div className="w-7/12">
+        <div>
           <Outlet />
       </div>
     </div>

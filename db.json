@@ -6,7 +6,7 @@
       "image": ""
     },
     {
-      "name": "Televisions",
+      "name": "Speakers",
       "id": 2,
       "image": ""
     },
@@ -98,8 +98,337 @@
           "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/187-large_default/hummingbird-printed-t-shirt.jpg"
         }
       }
+    },
+    {
+      "name": "Apple Watch Series 8 GPS 41mm Aluminum",
+      "id": 19,
+      "brand": "Samsung",
+      "category": "Watch",
+      "sku": "APLFK87465",
+      "stock": 50,
+      "condition": "new",
+      "desciption_short": "Very impressive. Whether you're on a crowded bus or on a plane, the Buds 2 Pro ANC will deliver the kind of surrounding world silencing you'd want, so you can enjoy your music fully in peace. Of course, you can turn off ANC and switch to Ambient sound if you actually want to hear what's happening around you.",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 306.85,
+      "price_desc": 361.00,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/37-large_default/brown-bear-printed-sweater.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/38-large_default/brown-bear-printed-sweater.jpg",
+          "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/39-large_default/brown-bear-printed-sweater.jpg"
+        }
+      }
+    },
+    {
+      "name": "Basics USB Plug-N-Play Computer Speakers For PC",
+      "id": 20,
+      "brand": " Bose",
+      "category": "Speakers",
+      "sku": "SPK66TH897",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "Jack or analogue cinch cables already provide the amplified sound signal. Via USB, so-called frames or data packets are transferred from the hard disk to the USB sound card and then converted and amplified in the speaker.",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 120.00,
+      "price_desc": 120.00,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/363-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/364-large_default/hummingbird-printed-t-shirt.jpg"
+        }
+      }
+    },
+    {
+      "name": "Wireless Earbud Bluetooth Earphones With Deep Bass",
+      "id": 21,
+      "brand": "Bose",
+      "category": "Speakers",
+      "sku": "EARBUD8476",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "Wireless headphones have been around since the 1960s. However, in 2004, Bluetooth wireless headphones came onto the market and revolutionized personal audio listening, gaining great popularity among audio consumers and professionals alike.",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 50.00,
+      "price_desc": 45.00,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/52-large_default/the-best-is-yet-to-come-framed-poster.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/53-large_default/the-best-is-yet-to-come-framed-poster.jpg"
+        }
+      }
+    },
+    {
+      "name": "MacBook Pro Laptop M2 Pro Chip With 10‑Core CPU",
+      "id": 22,
+      "brand": "Samsung",
+      "category": "Computer",
+      "sku": "MAC85SKD95",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "The unibody model debuted in October 2008 in 13- and 15-inch variants, with a 17-inch variant added in January 2009. Called the unibody model because its case was machined from a single piece of aluminum.",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 299.00,
+      "price_desc": 299.00,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/60-large_default/the-adventure-begins-framed-poster.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/61-large_default/the-adventure-begins-framed-poster.jpg"
+        }
+      }
+    },
+    {
+      "name": "Newest PlayStation PS5 Gaming Console Disc Version Bundle",
+      "id": 23,
+      "brand": "Asus",
+      "category": "Computer",
+      "sku": "PLY45GT786",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "Features like higher frame rates and ray tracing make the PS5 feel truly new-gen (to console gamers at least), while the DualSense is an amazing controller that really enhances games when used well.",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 39.00,
+      "price_desc": 39.00,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/149-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/150-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/151-large_default/hummingbird-printed-t-shirt.jpg"
+        }
+      }
+    },
+    {
+      "name": "Apple IPad Air 5th Generation Wi-Fi And Cellular",
+      "id": 24,
+      "brand": "Apple",
+      "category": "Mobiles",
+      "sku": "APL34TY567",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "The iPad Air (5th generation), colloquially known as the iPad Air 5, is a tablet computer designed, developed, and marketed by Apple Inc. It was announced by Apple on March 8, 2022.",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 225.00,
+      "price_desc": 225.00,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/122-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/123-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/124-large_default/hummingbird-printed-t-shirt.jpg"
+        }
+      }
+    },
+    {
+      "name": "Galaxy Watch5 44mm Bluetooth Smart Watch",
+      "id": 25,
+      "brand": "Bose",
+      "category": "Watch",
+      "sku": "WATCH95738",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "The Watch 5 Pro comes with Google's Wear OS powered by Samsung, so that means you get Google Maps, Google Assistant, Google Pay, Messages, Keep Notes, and more. In addition, Samsung Pay, Samsung Messages, Samsung Health, Bixby, and other Samsung apps are provided.",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 149.00,
+      "price_desc": 149.00,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/200-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/201-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/202-large_default/hummingbird-printed-t-shirt.jpg"
+        }
+      }
+    },
+    {
+      "name": "Apple IPhone 13 Pro Straight Talk, Prepaid Smartphone",
+      "id": 26,
+      "brand": "Apple",
+      "category": "Mobiles",
+      "sku": "APL78R2345",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "iPhone 13 Pro was made for low light. The Wide camera adds a wider aperture and our largest sensor yet — and it leverages the LiDAR Scanner for Night mode portraits. Ultra Wide gets a wider aperture, a faster sensor, and all-new autofocus. And Telephoto now has Night mode.",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 199.00,
+      "price_desc": 199.00,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/221-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/222-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/223-large_default/hummingbird-printed-t-shirt.jpg"
+        }
+      }
+    },
+    {
+      "name": "AirPods Max, Over Ear Headphones",
+      "id": 27,
+      "brand": "Dell",
+      "category": "Computer",
+      "sku": "APL67RT789",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "The AirPods Max is the best noise cancelling headset out right now, but it's not the easiest to use, or even the most comfortable. The lack of a headphone jack is frustrating and the “smart” case … isn't. If none of that bothers you, you'll love the AirPods Max. If you're not sure this is for you",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 79.00,
+      "price_desc": 67.15,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/74-large_default/today-is-a-good-day-framed-poster.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/75-large_default/today-is-a-good-day-framed-poster.jpg",
+          "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/76-large_default/today-is-a-good-day-framed-poster.jpg"
+        }
+      }
+    },
+    {
+      "name": "Bluetooth Speaker, IPX7 Waterproof Wireless Speaker",
+      "id": 28,
+      "brand": "Canon",
+      "category": "Speakers",
+      "sku": "BLUE74SD86",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "The SoundLink Mini II Special Edition delivers full, natural sound with dramatically deeper bass than you’d expect from a speaker that fits in the palm of your hand. It also features a built-in microphone for taking calls and makes easy wireless connections any time, anywhere. ",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 70,
+      "price_desc": 59.5,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/62-large_default/today-is-a-good-day-framed-poster.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/63-large_default/today-is-a-good-day-framed-poster.jpg",
+          "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/64-large_default/today-is-a-good-day-framed-poster.jpg"
+        }
+      }
+    },
+    {
+      "name": "Computer Mouse With Usb Led Silent, Wireless Mouse",
+      "id": 29,
+      "brand": "Samsung",
+      "category": "Computer",
+      "sku": "MOUS4R5674",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "he switches used in Logitech Silent Mice are made of a rubber actuator that dampens both the vibration and the sound. A red plastic cap covers the rubber actuator to improve the switch's tactile feedback and lengthen its lifespan.",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 29.00,
+      "price_desc": 29.00,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/289-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/290-large_default/hummingbird-printed-t-shirt.jpg"
+        }
+      }
+    },
+    {
+      "name": "Echo Dot 4th Gen Smart Speaker With Alexa",
+      "id": 30,
+      "brand": "Sony",
+      "category": "Speakers",
+      "sku": "ECHO86SK46",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "Complete any room with Alexa. Our most popular smart speaker has a sleek, compact design that fits perfectly into small spaces. It delivers crisp vocals and balanced bass for full sound you can enjoy anywhere in your home.",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 49.00,
+      "price_desc": 49.00,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/257-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/258-large_default/hummingbird-printed-t-shirt.jpg"
+        }
+      }
+    },
+    {
+      "name": "Bose Sound Link Micro Water Proof Wireless Bluetooth Portable Speaker",
+      "id": 31,
+      "brand": "Samsung",
+      "category": "Speakers",
+      "sku": "BLUE56QW38",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "Your speaker is waterproof, splash resistant, and dust proof. It is rated IP67 and IP64. You can immerse the speaker in water for up to 30 minutes at a depth of up to 3.3 ft (1 m). It can also be used while showering and in the rain or snow.",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 189.00,
+      "price_desc": 189.00,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/323-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/324-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_3": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/325-large_default/hummingbird-printed-t-shirt.jpg"
+        }
+      }
+    },
+    {
+      "name": "IPhone A14 Pro MAX Fully Unlocked Smartphone",
+      "id": 32,
+      "brand": "Apple",
+      "category": "Mobiles",
+      "sku": "APL652FR70",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "Reviews of the iPhone 14 Pro and iPhone 14 Pro Max were positive, highlighting the major new feature such as an always-on display with a new Dynamic Island, upgraded cameras with a 48-megapixel main lens, car crash detection and satellite connectivity.",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 125.00,
+      "price_desc": 125.00,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/345-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/346-large_default/hummingbird-printed-t-shirt.jpg"
+        }
+      }
+    },
+    {
+      "name": "Laview Home Security Camera HD 1080p",
+      "id": 33,
+      "brand": "Cannon",
+      "category": "Computer",
+      "sku": "CAM00TYU87",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "With a wireless security camera, the video signal—and, with some, the audio signal as well—transmits over the internet or other wireless network to a receiver that connects to your viewing and recording device.",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 89.00,
+      "price_desc": 89.00,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/385-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/386-large_default/hummingbird-printed-t-shirt.jpg"
+        }
+      }
+    },
+    {
+      "name": "Apple 2023 11-Inch IPad Pro (Wi-Fi, 256GB) Space Gray",
+      "id": 34,
+      "brand": "Apple",
+      "category": "Mobiles",
+      "sku": "APL65RG123",
+      "stock": 10,
+      "condition": "new",
+      "desciption_short": "Apple's made clear its interest in augmented reality, and we may hear more about its plans to make AR Glasses in 2023. The rumors suggest that we could see Apple's AR or VR headset product in 2023. Apple's upcoming xrOS may even be the start of a whole new ecosystem of devices.",
+      "description": "Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing. Supports wireless charging. Designed for iPhone 12 mini 5.4-Inch. Perfectly fits your device Made with PC and TPU. Inner tiny dots design avoids ugly watermark against the phone back and sides. Lightweight and slim design. Ultra transparent and scratch-resistant back Raised bezels offer extra protection for screen and camera. Unique shock-absorption design: 4 corners effectively absorb shocks Easy access to all the controls and features; Perfect cutouts for speakers, camera and other ports Package includes: iPhone 12 mini 5.4-Inch case in retail package",
+      "symbol": "$",
+      "price": 125.00,
+      "price_desc": 125.00,
+      "images": {
+        "type_1": {
+          "image_1": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/311-large_default/hummingbird-printed-t-shirt.jpg",
+          "image_2": "https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/312-large_default/hummingbird-printed-t-shirt.jpg"
+        }
+      }
     }
   ],
+
   "usuarios": [
     {
       "id": 1,

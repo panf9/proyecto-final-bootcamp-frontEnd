@@ -1,11 +1,11 @@
-import { Outlet } from 'react-router-dom'
+// import { Outlet } from 'react-router-dom'
 import Header from '../components/Header'
 
-const HomeLayout = () => {
+const HomeLayout = (props) => {
   return (
     <>
       <Header />
-      <Outlet />
+      {props.children}
     </>
   )
 }

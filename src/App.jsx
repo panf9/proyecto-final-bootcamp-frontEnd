@@ -1,20 +1,19 @@
 
-import { RouterProvider } from "react-router-dom";
-import { PrimaryRouter } from './Routes/PrimaryRouter'
+// import { RouterProvider } from "react-router-dom";
+// import { PrimaryRouter } from './Routes/PrimaryRouter'
 
 
-function App() {
+// function App() {
+//   return (
+//     <>
+//       <RouterProvider router={PrimaryRouter} />
+//     </>
+//   )
+// }
 
-  return (
-    <>
-      <RouterProvider router={PrimaryRouter} />
-    </>
-  )
-}
+// export default App
 
-export default App
-
-/* <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path="my-account" element={<MyAccountPage />} />
-      </Routes> */
+// /* <Routes>
+//         <Route path='/' element={<Home />} />
+//         <Route path="my-account" element={<MyAccountPage />} />
+//       </Routes> */

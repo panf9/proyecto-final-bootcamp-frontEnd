@@ -1,10 +1,26 @@
 import { CiHeart } from "react-icons/ci";
 import { IoIosExpand } from "react-icons/io";
 
+import { UserContext } from "../context/UserContext";
+import { useContext } from "react";
+
 const Product = ({ products }) => {
-  console.log("Desde el props ", products);
+  const { addProduct, totalItems } = useContext(UserContext)
+
+  const handleCLick = (event) => {
+    const id = event.currentTarget.dataset.id
+    const name = event.currentTarget.dataset.name
+    const price = event.currentTarget.dataset.price
+    const qty = 1
+
+    const newObject = {id, name, price, qty}
+
+    addProduct(newObject)
+    totalItems()
+  }
+
   return (
-    <div className="flex">
+    <div className="grid grid-cols-4 gap-2">
       {products.map(product => {
           return (
             <div key={product.id} className="w-[234px] border group relative" >
@@ -37,7 +53,11 @@ const Product = ({ products }) => {
               <div className="text-center">
                 <button 
                   className="text-white group-hover:bg-[#FAD505] group-hover:text-black py-2 px-6 rounded-md font-semibold text-sm my-3"
-                >
+                  onClick={handleCLick}
+                  data-id={product.id}
+                  data-name={product.name}
+                  data-price={product.price}
+                  >
                   Add To Card
                 </button>
               </div>
