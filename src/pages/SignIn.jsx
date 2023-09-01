@@ -72,17 +72,17 @@ const SignIn = () => {
                 type="email" 
                 name="email" 
                 required 
-                className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"
+                className="md:w-96 ml-3 border rounded-md h-12 pl-3 outline-0"
                 onChange={handleChange}
               />
             </div>
-            <div>
+            <div className="w-full inline-flex">
               <label>password</label>
               <input 
                 type={visible? "text": "password"} 
                 name="password" 
                 required 
-                className="w-80 ml-3 border rounded-l-md h-12 pl-3 outline-0"
+                className=" md:w-80 ml-3 border rounded-l-md h-12 pl-3 outline-0"
                 onChange={handleChange}
               />
               <button 

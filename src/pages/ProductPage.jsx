@@ -4,23 +4,31 @@ import { useParams } from "react-router-dom"
 const ProductPage = () => {
   const productName = useParams('/products/').productname.replaceAll("-", " ")
   const [product, setProduct] = useState({})
+  const [images, setImages] = useState()
 
-  console.log(productName);
+  // console.log(product);
+
+  // console.log(productName);
   const productFind = async () => {
     const url = "http://localhost:3000/productos"
     const response = await fetch(url)
     const data = await response.json()
-    console.log(data);
+    // console.log(data);
 
     const currentProduct = data.filter( element => element.name === productName)
 
     setProduct(currentProduct[0])
+
+    // console.log("current Product", );
+
+    setImages(currentProduct[0].images.type_1)
+    // console.log("images", images);
   }
 
   useEffect(() => {
     productFind()
   }, [])
-  console.log(product);
+  // console.log(product);
   return (
     <>
       {/* {JSON.stringify(product.images?.type_1.image_1)} */}
@@ -29,7 +37,18 @@ const ProductPage = () => {
           <div>
             </div>
               <ul>
-                
+                {
+                  // console.log("imagenes ", images)
+                  Object.entries(images).forEach(([key, value]) => {
+                    console.log(key, value)
+                  })
+                  // images.map( image => {
+                  //   console.log("imagen dentro del =>", image)
+                  //   return (
+                  //     <li key={product.id}><img src={`${image}`} alt="imagen"/></li>
+                  //   )
+                  // })
+                } 
               </ul>
             <div className="border">
             <img src={`${product.images?.type_1.image_1}`} alt="" />

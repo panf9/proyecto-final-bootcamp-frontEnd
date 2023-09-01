@@ -14,7 +14,7 @@ const AccountLayout = (props) => {
             <hr />
           </div>
         </div>
-        <div className="w-7/12">
+        <div className="w-full md:w-7/12">
           <Outlet />
           {/* {props.children} */}
       </div>

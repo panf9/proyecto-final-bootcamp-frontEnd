@@ -44,7 +44,7 @@ const Header = () => {
     <>
       <header className="bg-[#FAD505]">
         <div className="hidden md:block">
-          <nav className="flex justify-center md:justify-between w-full md:w-[1170px] mx-auto py-2">
+          <nav className="hidden lg:flex lg:justify-between w-full md:w-[1170px] mx-auto py-2">
             <div>
               <span className="font-[300] hidden lg:block ">
               Get Up To 50% OFF New Season Styles, Limited Time Only.
@@ -74,13 +74,15 @@ const Header = () => {
         </div>
         <hr />
         <div>
-          <div className="w-full md:w-[1170px] mx-auto text-center md:flex md:justify-between  py-4">
-              <Link to='/'><img src="https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/img/logo-1680764769.jpg" alt="logo prinicipal" /></Link>
-            <div className="w-full md:w-[650px]">
+          <div className="w-full lg:w-[1170px] mx-auto lg:flex lg:justify-between lg:py-4">
+              <div className="flex justify-center items-center my-5 lg:my-0">
+                <Link to='/' ><img src="https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/img/logo-1680764769.jpg" alt="logo prinicipal" /></Link>
+              </div>
+            <div className="w-full md:w-[650px] flex justify-center items-center">
               <input 
                 type="text" 
                 placeholder="Search Product Here..."
-                className="w-full py-3 px-4 rounded-l-3xl outline-0"
+                className=" md:w-[450px] py-3 px-4 rounded-l-3xl outline-0"
               />
               <button 
                 type="submit"
@@ -89,13 +91,13 @@ const Header = () => {
                 Search
               </button>
             </div>
-            <div className="flex justify-between item-center gap-4">
-                <div className="flex">
-                  <RxLoop className="pt-1 hidden md:block" size='2rem' />
+            <div className="flex justify-end lg:justify-between item-center gap-4">
+                <div className="hidden lg:flex">
+                  <RxLoop className="pt-1" size='2rem' />
                   <span className="hidden md:block bg-[#303840] text-white rounded-full h-5 w-5 text-center text-sm">0</span>
                 </div>
-                <div className="flex">
-                  <BsHeart  className="pt-1 hidden md:block" size='1.8rem'/>
+                <div className="hidden lg:flex">
+                  <BsHeart  className="pt-1" size='1.8rem'/>
                   <span className="hidden md:block bg-[#303840] text-white rounded-full h-5 w-5 text-center text-sm">0</span>
                 </div>
                 <div className="group relaive">
