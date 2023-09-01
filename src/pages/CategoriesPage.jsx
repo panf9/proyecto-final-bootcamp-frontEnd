@@ -20,7 +20,7 @@ const CategoriesPage = () => {
   }, [category])
   console.log("Categoria ", category);
   return (
-      <div className="flex justify-center mx-auto w-[1170px]">
+      <div className="flex justify-center mx-auto w-full md:w-[1170px]">
         <div className="w-[214px] mt-24 mr-5">
           <div className="bg-[url('https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/modules/cp_leftbanner1/views/img/left-banner-1.jpg')] bg-no-repeat h-72 text-white rounded">
             <p className="text-lg text-center pt-8">New Trending</p>

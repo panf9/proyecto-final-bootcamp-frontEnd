@@ -73,7 +73,7 @@ const Home = () => {
         img= {slider.img}
       />
       
-      <div className="flex gap-3 md-4 w-[1170px] mx-auto mt-8">
+      <div className="flex gap-3 md-4 w-full md:w-[1170px] mx-auto mt-8">
         <Card 
           img={'https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/modules/cp_cmsbanner1/views/img/cms-banner1.jpg'}
           title_1={'BIG DEALS'}
@@ -100,7 +100,7 @@ const Home = () => {
         />
         
       </div>
-      <div className="w-[1170px] mx-auto mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5">
+      <div className="w-full md:w-[1170px] mx-auto mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5">
         <div className="flex gap-4 border py-6 px-4 text-center">
           <LiaShippingFastSolid size="3rem" fill="#FAD505"/>
           <div>

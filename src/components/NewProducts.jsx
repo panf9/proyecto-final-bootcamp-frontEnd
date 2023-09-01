@@ -17,7 +17,7 @@ const NewProducts = () => {
   }, [])
 
   return (
-    <div className="w-[1170px] mx-auto mt-8 px-10">
+    <div className="w-full md:w-[1170px] mx-auto mt-8 px-10">
       <Product products={products} cols={4}/>
     </div>
   )

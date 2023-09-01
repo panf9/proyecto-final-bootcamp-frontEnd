@@ -44,7 +44,7 @@ const Header = () => {
     <>
       <header className="bg-[#FAD505]">
         <div className="hidden md:block">
-          <nav className="flex justify-between w-[1170px] mx-auto py-2">
+          <nav className="flex justify-between w-full md:w-[1170px] mx-auto py-2">
             <div>
               <span className="font-[300] hidden lg:block ">
               Get Up To 50% OFF New Season Styles, Limited Time Only.
@@ -74,7 +74,7 @@ const Header = () => {
         </div>
         <hr />
         <div>
-          <div className="w-[1170px] mx-auto flex justify-between py-4">
+          <div className="w-full md:w-[1170px] mx-auto flex justify-between py-4">
             <Link to='/'><img src="https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/img/logo-1680764769.jpg" alt="logo prinicipal" /></Link>
             <div>
               <input 
@@ -122,7 +122,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <div className="flex py-3 w-[1170px] mx-auto">
+      <div className="flex py-3 w-full md:w-[1170px] mx-auto">
         {/* Menudo deplegable */}
         <div className="flex flex-col gap-1 group absolute">
           <div className="flex items-center">
