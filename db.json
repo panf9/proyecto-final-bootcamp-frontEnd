@@ -28,7 +28,7 @@
   ],
   "productos": [
     {
-      "name": "Apple IPhone 14 Pro Max, 64GB, White - Fully Unlocked",
+      "name": "Apple IPhone 14 Pro Max 64GB White",
       "id": 11,
       "brand": "Apple",
       "category": "Mobiles",
@@ -69,7 +69,7 @@
       }
     },
     {
-      "name": "Samsung Buds2.0 Pro Galaxy MM-R4 NZAWXAR",
+      "name": "Samsung Buds2.0 Pro Galaxy MM R4 NZAWXAR",
       "id": 18,
       "brand": "Samsung",
       "category": "Mobiles",
@@ -121,7 +121,7 @@
       }
     },
     {
-      "name": "Basics USB Plug-N-Play Computer Speakers For PC",
+      "name": "Basics USB Plug and Play Computer Speakers For PC",
       "id": 20,
       "brand": " Bose",
       "category": "Speakers",
@@ -161,7 +161,7 @@
       }
     },
     {
-      "name": "MacBook Pro Laptop M2 Pro Chip With 10‑Core CPU",
+      "name": "MacBook Pro Laptop M2 Pro Chip With 10 Core CPU",
       "id": 22,
       "brand": "Samsung",
       "category": "Computer",
@@ -202,7 +202,7 @@
       }
     },
     {
-      "name": "Apple IPad Air 5th Generation Wi-Fi And Cellular",
+      "name": "Apple IPad Air 5th Generation WiFi And Cellular",
       "id": 24,
       "brand": "Apple",
       "category": "Mobiles",
@@ -244,7 +244,7 @@
       }
     },
     {
-      "name": "Apple IPhone 13 Pro Straight Talk, Prepaid Smartphone",
+      "name": "Apple IPhone 13 Pro Straight Talk Prepaid Smartphone",
       "id": 26,
       "brand": "Apple",
       "category": "Mobiles",
@@ -265,7 +265,7 @@
       }
     },
     {
-      "name": "AirPods Max, Over Ear Headphones",
+      "name": "AirPods Max Over Ear Headphones",
       "id": 27,
       "brand": "Dell",
       "category": "Computer",
@@ -286,7 +286,7 @@
       }
     },
     {
-      "name": "Bluetooth Speaker, IPX7 Waterproof Wireless Speaker",
+      "name": "Bluetooth Speaker IPX7 Waterproof Wireless Speaker",
       "id": 28,
       "brand": "Canon",
       "category": "Speakers",
@@ -307,7 +307,7 @@
       }
     },
     {
-      "name": "Computer Mouse With Usb Led Silent, Wireless Mouse",
+      "name": "Computer Mouse With Usb Led Silent Wireless Mouse",
       "id": 29,
       "brand": "Samsung",
       "category": "Computer",
@@ -408,7 +408,7 @@
       }
     },
     {
-      "name": "Apple 2023 11-Inch IPad Pro (Wi-Fi, 256GB) Space Gray",
+      "name": "Apple 2023 11 Inch IPad Pro WiFi 256GB Space Gray",
       "id": 34,
       "brand": "Apple",
       "category": "Mobiles",

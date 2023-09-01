@@ -7,6 +7,7 @@ import SignIn from "../pages/SignIn"
 import CreateAccount from "../pages/CreateAccount"
 import PassRecovery from "../pages/PassRecovery"
 import { UserProvider } from "../context/UserContext"
+import ProductPage from "../pages/ProductPage"
 
 const Router = () => {
   return (
@@ -16,6 +17,7 @@ const Router = () => {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/:category' element={<CategoriesPage />}/>
+            <Route path='/products/:productname' element={<ProductPage />}/>
 
             <Route path="my-account" element={<AccountLayout />}>
               <Route path="" element={<SignIn />}/>

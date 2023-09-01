@@ -14,16 +14,16 @@ import ModalCart from "../utility/ModalCart";
 
 const Header = () => {
   const [categories, setCategories] = useState([])
-  // const { totalCart } = useContext(UserContext)
-  const [totalCart, setTotalCart] = useState(0)
+  const { totalCart, setTotalCart } = useContext(UserContext)
+  // const [totalCart, setTotalCart] = useState(0)
   const [productList, setProductList] = useState(JSON.parse(localStorage.getItem('product')) || [])
 
   const totalItems = () => {
     let cantidad = 0
     productList.forEach(element => {
-      console.log("element qty", element.qty)
+      // console.log("element qty", element.qty)
       cantidad = cantidad + element.qty
-      console.log("Total Cart", totalCart)
+      // console.log("Total Cart", totalCart)
     });
     setTotalCart(cantidad)
   }
@@ -76,11 +76,11 @@ const Header = () => {
         <div>
           <div className="w-[1170px] mx-auto flex justify-between py-4">
             <Link to='/'><img src="https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/img/logo-1680764769.jpg" alt="logo prinicipal" /></Link>
-            <div className="flex">
+            <div>
               <input 
                 type="text" 
                 placeholder="Search Product Here..."
-                className="w-100% py-3 px-4 rounded-l-3xl outline-0"
+                className="w-[650px] py-3 px-4 rounded-l-3xl outline-0"
               />
               <button 
                 type="submit"
@@ -107,8 +107,15 @@ const Header = () => {
                       {totalCart}
                     </span>
                   </div>
-                  <div className="hidden absolute group-hover:block w-full h-full top-auto bottom-auto left-auto right-auto bg-slate-900/70 ">
-                    <ModalCart />
+                  <div className="hidden absolute group-hover:block w-full h-full top-0 left-0 ">
+                    <div className="flex justify-end bg-slate-900/70 relative z-50">
+                      <div>
+
+                      </div>
+                      <div>
+                        <ModalCart />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
