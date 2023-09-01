@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
     <div className="mt-6 bg-[#FAD505] py-3">
-      <div className="w-full md:w-[1170px] flex gap-3 mx-auto">
+      <div className="w-full md:w-[1170px] text-center md:flex md:gap-3 mx-auto">
         <HiOutlineMailOpen size="3rem"/>
         <div>
           <h2 className="font-bold text-2xl ">Join Our Newsletter, Get 10% Off</h2>
@@ -18,7 +18,7 @@ const Footer = () => {
       </div>
     </div>
     <div>
-      <div className="w-full md:w-[1170px] flex justify-between my-8 mx-auto gap">
+      <div className="w-full md:w-[1170px] text-center md:flex md:justify-between my-8 mx-auto gap">
         <div>
           <h2 className="font-semibold text-lg my-4">Contact Us</h2>
           <p>Contact Us</p>

@@ -23,7 +23,7 @@ const Product = ({ products }) => {
   }
 
   return (
-    <div className="grid grid-cols-4 gap-2 relative z-0">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 relative z-0">
       {products.map(product => {
           return (
             <div key={product.id} className="w-[234px] border group relative" >

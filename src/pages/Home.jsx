@@ -73,32 +73,39 @@ const Home = () => {
         img= {slider.img}
       />
       
-      <div className="flex gap-3 md-4 w-full md:w-[1170px] mx-auto mt-8">
-        <Card 
-          img={'https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/modules/cp_cmsbanner1/views/img/cms-banner1.jpg'}
-          title_1={'BIG DEALS'}
-          title_2={'STM CHARGETREE'}
-          text={'Apple Watch'}
-        />
-        <Card 
-          img={'https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/modules/cp_cmsbanner1/views/img/cms-banner2.jpg'}
-          title_1={'TRENDING'}
-          title_2={'SAMSUNG GALAXY'}
-          text={'Tablets'}  
-        />
-        <Card 
-          img={'https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/modules/cp_cmsbanner1/views/img/cms-banner3.jpg'}
-          title_1={'30% OFF ON EVERY'}
-          title_2={'ANSI LUMEN'}
-          text={'Projector'}  
-        />
-        <Card 
-          img={'https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/modules/cp_cmsbanner1/views/img/cms-banner4.jpg'}
-          title_1={'TRENDING'}
-          title_2={'MAGIC KEYBOARD'}
-          text={'For IPad'}  
-        />
-        
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md-4 w-full md:w-[1170px] mx-auto mt-8">
+        <div>
+          <Card 
+            img={'https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/modules/cp_cmsbanner1/views/img/cms-banner1.jpg'}
+            title_1={'BIG DEALS'}
+            title_2={'STM CHARGETREE'}
+            text={'Apple Watch'}
+          />
+        </div>
+        <div>
+          <Card 
+            img={'https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/modules/cp_cmsbanner1/views/img/cms-banner2.jpg'}
+            title_1={'TRENDING'}
+            title_2={'SAMSUNG GALAXY'}
+            text={'Tablets'}  
+          />
+        </div>
+        <div>
+          <Card 
+            img={'https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/modules/cp_cmsbanner1/views/img/cms-banner3.jpg'}
+            title_1={'30% OFF ON EVERY'}
+            title_2={'ANSI LUMEN'}
+            text={'Projector'}  
+          />
+        </div>
+        <div>
+          <Card 
+            img={'https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/modules/cp_cmsbanner1/views/img/cms-banner4.jpg'}
+            title_1={'TRENDING'}
+            title_2={'MAGIC KEYBOARD'}
+            text={'For IPad'}  
+          />
+        </div>
       </div>
       <div className="w-full md:w-[1170px] mx-auto mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5">
         <div className="flex gap-4 border py-6 px-4 text-center">

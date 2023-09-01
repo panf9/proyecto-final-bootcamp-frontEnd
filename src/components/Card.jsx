@@ -2,7 +2,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Card = ({ title_1, title_2, text, img }) => {
   return (
-    <div className="relative overflow-hidden w-72 group">
+    <div className="relative overflow-hidden w-72 group mt-3 md:mt-0">
         <img className="object-cover rounded  group-hover:scale-105 hover:duration-500" src={`${img}`} alt="imagen" />
         <div className="absolute top-5 pl-8">
           <h2 className="font-light text-lg">{title_1}</h2>

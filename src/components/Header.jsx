@@ -44,7 +44,7 @@ const Header = () => {
     <>
       <header className="bg-[#FAD505]">
         <div className="hidden md:block">
-          <nav className="flex justify-between w-full md:w-[1170px] mx-auto py-2">
+          <nav className="flex justify-center md:justify-between w-full md:w-[1170px] mx-auto py-2">
             <div>
               <span className="font-[300] hidden lg:block ">
               Get Up To 50% OFF New Season Styles, Limited Time Only.
@@ -74,13 +74,13 @@ const Header = () => {
         </div>
         <hr />
         <div>
-          <div className="w-full md:w-[1170px] mx-auto flex justify-between py-4">
-            <Link to='/'><img src="https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/img/logo-1680764769.jpg" alt="logo prinicipal" /></Link>
-            <div>
+          <div className="w-full md:w-[1170px] mx-auto text-center md:flex md:justify-between  py-4">
+              <Link to='/'><img src="https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/img/logo-1680764769.jpg" alt="logo prinicipal" /></Link>
+            <div className="w-full md:w-[650px]">
               <input 
                 type="text" 
                 placeholder="Search Product Here..."
-                className="w-[650px] py-3 px-4 rounded-l-3xl outline-0"
+                className="w-full py-3 px-4 rounded-l-3xl outline-0"
               />
               <button 
                 type="submit"
@@ -122,7 +122,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <div className="flex py-3 w-full md:w-[1170px] mx-auto">
+      <div className="flex py-3 w-full md:w-[1170px] mx-auto mb-4">
         {/* Menudo deplegable */}
         <div className="flex flex-col gap-1 group absolute">
           <div className="flex items-center">
@@ -150,10 +150,10 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        <div className="ml-44 mr-8">
+        <div className="hidden md:block ml-44 mr-8">
           |
         </div>
-        <div className="flex gap-10 font-[400]">
+        <div className="hidden md:flex md:gap-10 font-[400]">
             {
               categories.map( category => {
                 return (
