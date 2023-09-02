@@ -39,7 +39,8 @@ const ProductPage = () => {
               <ul>
                 {
                   // console.log("imagenes ", images)
-                  Object.entries(images).forEach(([key, value]) => {
+                  Object.entries(images).map( entry => {
+                    const [key, value] = entry
                     console.log(key, value)
                   })
                   // images.map( image => {
