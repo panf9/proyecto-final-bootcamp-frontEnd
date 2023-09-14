@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { CiLineHeight } from "react-icons/ci"
+import { Link, useParams } from "react-router-dom"
 
 const ProductPage = () => {
   const productName = useParams('/products/').productname.replaceAll("-", " ")
   const [product, setProduct] = useState({})
   const [images, setImages] = useState()
+  const [click, setCLick] = useState(false)
+  const [img, setImg] = useState()
+  const [productsCat, setProductsCat] = useState([])
 
   // console.log(product);
 
@@ -19,40 +23,55 @@ const ProductPage = () => {
 
     setProduct(currentProduct[0])
 
-    // console.log("current Product", );
-
     setImages(currentProduct[0].images.type_1)
-    // console.log("images", images);
+
+    console.log("Cat actual", currentProduct[0].category);
+    const prodCategories = data.filter(element => element.category === currentProduct[0].category)
+    setProductsCat(prodCategories)
+  }
+
+  const handleCLick = (event) => {
+    const img = event.currentTarget.dataset.img
+    console.log(img);
+    setCLick(true)
+    setImg(img)
   }
 
   useEffect(() => {
     productFind()
   }, [])
   // console.log(product);
+
   return (
     <>
       {/* {JSON.stringify(product.images?.type_1.image_1)} */}
-      <div className="flex">
+      <div className="flex w-[1170px] mx-auto mt-10">
         <div>
-          <div>
-            </div>
+          <div className="flex">
+            <div>
               <ul>
                 {
                   // console.log("imagenes ", images)
+                  images && 
                   Object.entries(images).map( entry => {
                     const [key, value] = entry
-                    console.log(key, value)
+                    return (
+                    <li key={key} 
+                      className="w-20 mr-5 hover:rounded-sm hover:border hover:border-yellow-400 focus:ring-1"
+                      data-img={value}
+                      onClick={handleCLick}
+                    > 
+                      <img src={`${value}`} alt="" 
+                      />
+                    </li>
+                    )
                   })
-                  // images.map( image => {
-                  //   console.log("imagen dentro del =>", image)
-                  //   return (
-                  //     <li key={product.id}><img src={`${image}`} alt="imagen"/></li>
-                  //   )
-                  // })
                 } 
               </ul>
-            <div className="border">
-            <img src={`${product.images?.type_1.image_1}`} alt="" />
+            </div>
+            <div className="">
+            <img src={  click?img:`${product.images?.type_1.image_1}`} alt="" />
+            </div>
           </div>
         </div>
         <div className="ml-14">
@@ -85,6 +104,30 @@ const ProductPage = () => {
             <button className=" bg-[#FAD505] text-black py-3 px-20 rounded-md font-semibold text-sm my-5 ml-10">Add To Cart</button>
           </div>
         </div>
+      </div>
+      <div className="flex mt-10">
+        {
+        // JSON.stringify(productsCat) 
+        productsCat.map(product => {
+          return (
+            <div key={product.id} className="border">
+              <div>
+                <img  src={`${product.images.type_1.image_1}`} />
+              </div>
+              <div>
+                {product.brand}
+              </div>
+              <div>
+                {product.name}
+              </div>
+              <div>
+                <span>{product.price_desc}</span>
+                <span>{product.price}</span>
+              </div>
+            </div>
+          )
+        })
+        }
       </div>
     </>
   )

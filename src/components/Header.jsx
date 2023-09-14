@@ -14,6 +14,7 @@ import ModalCart from "../utility/ModalCart";
 
 const Header = () => {
   const [categories, setCategories] = useState([])
+  const [showCart, setShowCart] = useState(false)
   const { totalCart, setTotalCart } = useContext(UserContext)
   // const [totalCart, setTotalCart] = useState(0)
   const [productList, setProductList] = useState(JSON.parse(localStorage.getItem('product')) || [])
@@ -100,26 +101,26 @@ const Header = () => {
                   <BsHeart  className="pt-1" size='1.8rem'/>
                   <span className="hidden md:block bg-[#303840] text-white rounded-full h-5 w-5 text-center text-sm">0</span>
                 </div>
-                <div className="group relaive">
+                <div className="group relaive" 
+                  onClick= {() => {setShowCart(true) 
+                    console.log(showCart)}}
+                >
                   <div className="flex">
-                    <TfiShoppingCartFull className="pt-1" size='2rem' />
+                    <TfiShoppingCartFull 
+                      className="pt-1" 
+                      size='2rem' 
+                    />
                     <span 
                       className="bg-[#303840] text-white rounded-full h-5 w-5 text-center text-sm"
                     >
                       {totalCart}
                     </span>
                   </div>
-                  <div className="hidden absolute group-hover:block w-full h-full top-0 left-0 ">
-                    <div className="flex justify-end bg-slate-900/70 relative z-50">
-                      <div>
-
-                      </div>
-                      <div>
-                        <ModalCart />
-                      </div>
-                    </div>
-                  </div>
                 </div>
+                <ModalCart 
+                  showCart = {showCart}
+                  setShowCart = {setShowCart}
+                />
               </div>
           </div>
         </div>
