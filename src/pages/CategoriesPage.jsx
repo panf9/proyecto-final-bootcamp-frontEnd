@@ -7,10 +7,10 @@ const CategoriesPage = () => {
   const { category } = useParams('/')
 
   const fetchProducts = async () => {
-    const url = 'http://localhost:3000/productos'
+    const url = 'http://localhost:3000/products'
     const response = await fetch (url)
     const data = await response.json()
-    const newData = data.filter( dat => dat.category === category)
+    const newData = data.filter( dat => dat.category.name === category)
     setProducts(newData)
     console.log("new data => ",newData);
   }
@@ -36,11 +36,13 @@ const CategoriesPage = () => {
             <h2 className="font-[600px] text-2xl pl-10 mb-2">{category.toUpperCase()}</h2>
             <hr className="mb-2"/>
           </div>
-          <Product 
-          products={products}
-        />
+          <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 relative z-0">
+            <Product 
+            products={products}
+            />
+          </div>
+        </div>
       </div>
-    </div>
   )
 }
 

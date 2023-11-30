@@ -1,75 +1,14 @@
-// import { createContext, useState } from "react"
-
-// export const UserContext = createContext()
-
-// export const UserProvider = ({ children }) => {
-//   // const [user, setUser] = useState(JSON.parse(localStorage.setItem('Auth')) || null)
-
-//   // const [shipping, setShipping] = useState([])
-//   const [totalCart, setTotalCart] = useState(0)
-//   const [productList, setProductList] = useState(JSON.parse(localStorage.getItem('product')) || [])
-
-//   // const addProduct = (product) => {
-//   //   const newValue = shipping.find(e => e.id === product.id)
-//   //   if (newValue) {
-//   //     newValue.qty += product.qty
-//   //     shipping.forEach( e => {
-//   //       if ( e.id === newValue.id){
-//   //         e.qty = newValue.qty
-//   //       }
-//   //     })
-//   //     // console.log("TOTAL ", shipping)
-//   //   }else{
-//   //     setShipping([ ...shipping, product])
-//   //     // console.log("TOTAL NUEVO", shipping);
-//   //   }
-//   //   setTotalCar(totalCar + product.qty)
-//   // // console.log("El total de productos: ", totalCar);s
-//   // }
-
-//   const totalItems = () => {
-//     // console.log("total items", productList.length);
-//     productList.forEach(element => {
-//       setTotalCart( totalCart + element.qty)
-//     });
-//   }
-
-//   const addProduct = (product) => {
-//     let find = true;
-//     productList.filter(e => {
-//       console.log("dentro del filter");
-//       if (e.id === product.id){
-//         e.qty++
-//         find = false
-//       }
-//     })
-//     if (find){
-//       setProductList([...productList, product])
-//     }
-//     localStorage.setItem('product', JSON.stringify(productList))
-//   }
-//   // Agregar el localStorage dentro del handleClick y fuera para que agrege productos existentes y no existentes.
-//   localStorage.setItem('product', JSON.stringify(productList))
-
-
-//   return (
-//     <UserContext.Provider value={{ productList, totalItems, totalCart, addProduct }}>
-//       { children }
-//     </UserContext.Provider>
-//   )
-// }
-
-
-import { createContext, useState } from "react"
+import { createContext, useEffect, useState } from "react"
 
 export const UserContext = createContext()
 
 export const UserProvider = ({ children }) => {
-  // const [user, setUser] = useState(JSON.parse(localStorage.setItem('Auth')) || null)
+  const [user, setUSer] = useState(JSON.parse(localStorage.getItem('auth')) || null)
 
-  // const [shipping, setShipping] = useState([])
   const [totalCart, setTotalCart] = useState(0)
   const [productList, setProductList] = useState(JSON.parse(localStorage.getItem('product')) || [])
+
+  const [showCart, setShowCart] = useState(false)
 
   // const addProduct = (product) => {
   //   const newValue = shipping.find(e => e.id === product.id)
@@ -90,15 +29,17 @@ export const UserProvider = ({ children }) => {
   // }
 
   const totalItems = () => {
-    // console.log("total items", productList.length);
+    let num = 0
     productList.forEach(element => {
-      setTotalCart( totalCart + element.qty)
+      num += element.qty
     });
+    setTotalCart( num )
   }
 
   const addProduct = (product) => {
     console.log(product)
-    
+    setTotalCart(totalCart + product.qty)
+    console.log(totalCart)
     const productIndex = productList.findIndex(p => p.id === product.id)
 
     if (productIndex >= 0) {
@@ -106,39 +47,57 @@ export const UserProvider = ({ children }) => {
         if (p.id === product.id) {
           return {
             ...p,
-            qty: product.qty + 1
+            qty: p.qty + 1
           }
         }
         return p
       })
 
       setProductList(newProducts)
-    } else {
+    }else {
       setProductList([...productList, product])
-      // setTotalCart(totalCart + 1)
     }
-
-    localStorage.setItem('product', JSON.stringify(productList))
-
-    // let find = true;
-    // productList.filter(e => {
-    //   console.log("dentro del filter");
-    //   if (e.id === product.id){
-    //     e.qty++
-    //     find = false
-    //   }
-    // })
-    // if (find){
-    //   setProductList([...productList, product])
-    // }
-    // localStorage.setItem('product', JSON.stringify(productList))
+    // console.log("ProducList: ", productList);
+    // localStorage.setItem('product', JSON.stringify(productList) )
+    
   }
   // Agregar el localStorage dentro del handleClick y fuera para que agrege productos existentes y no existentes.
-  // localStorage.setItem('product', JSON.stringify(productList))
+  localStorage.setItem('product', JSON.stringify(productList))
+
+  useEffect( () => {
+    productList
+    totalItems()
+  }, [])
+
+  const isAuth = Boolean(user?.accessToken)
+  
+  const storeUser = (dataUser) => {
+    localStorage.setItem('auth', JSON.stringify(dataUser))
+    setUSer(dataUser)
+  }
+
+  const cleanUser = () => {
+    localStorage.removeItem('auth')
+    setUSer(null)
+  }
+
 
 
   return (
-    <UserContext.Provider value={{ productList, totalItems, totalCart, setTotalCart, addProduct }}>
+    <UserContext.Provider 
+    value={{ 
+      productList, 
+      setProductList, 
+      totalCart, 
+      setTotalCart, 
+      addProduct,
+      user,
+      storeUser,
+      cleanUser,
+      isAuth,
+      setShowCart,
+      showCart
+      }}>
       { children }
     </UserContext.Provider>
   )

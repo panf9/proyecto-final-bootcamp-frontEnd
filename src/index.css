@@ -23,3 +23,19 @@ body {
         opacity: 100%;
     }
 }
+
+.sub-title {
+    content: ' ';
+    border-bottom: 2px solid #FAD505;
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+}
+
+/* Ocultamos las flechas de incrementar/decrementar del input */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

@@ -1,5 +1,7 @@
 # INFORMACIÓN DEL PROYECTO
 
+[Link template](https://prestashop.coderplace.com/PRS02/PRS02045/PRS02/en/)
+
 En este proyecto vamos a intentar clonar el maquetado de la página \_[plantilla tienda en linea]
 
 ## Theme Customizer

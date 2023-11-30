@@ -4,41 +4,38 @@ import { LiaShippingFastSolid } from "react-icons/lia";
 import { BsHeart } from "react-icons/bs"; 
 import { TfiShoppingCartFull } from "react-icons/tfi";
 import { RxLoop } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 import { useContext, useEffect, useState } from "react";
 import CategoriesPage from "../pages/CategoriesPage";
+import { LiaUserTimesSolid } from "react-icons/lia";
+
 
 import { UserContext } from "../context/UserContext";
 import ModalCart from "../utility/ModalCart";
 
+
 const Header = () => {
   const [categories, setCategories] = useState([])
-  const [showCart, setShowCart] = useState(false)
-  const { totalCart, setTotalCart } = useContext(UserContext)
-  // const [totalCart, setTotalCart] = useState(0)
-  const [productList, setProductList] = useState(JSON.parse(localStorage.getItem('product')) || [])
+  // const [showCart, setShowCart] = useState(false)
+  const { totalCart, user, cleanUser, showCart, setShowCart } = useContext(UserContext)
 
-  const totalItems = () => {
-    let cantidad = 0
-    productList.forEach(element => {
-      // console.log("element qty", element.qty)
-      cantidad = cantidad + element.qty
-      // console.log("Total Cart", totalCart)
-    });
-    setTotalCart(cantidad)
-  }
+  const navigate = useNavigate()
 
   const fetchCatgeries = async () => {
-    const url = 'http://localhost:3000/categorias'
+    const url = 'http://localhost:3000/categories'
     const categories = await fetch(url)
     const data = await categories.json()
     setCategories(data)
   }
+  
+  const handleLogout = () => {
+    cleanUser()
+    navigate('/login')
+  }
 
   useEffect(() => {
     fetchCatgeries()
-    totalItems()
   }, [])
 
   return (
@@ -67,8 +64,18 @@ const Header = () => {
                 |
               </div>
               <div className="flex justify-beteween items-center gap-1">
-                <VscAccount />
-                <Link to="my-account" className="font-[300]">My Account</Link>
+                { !user?.accessToken && 
+                  <>
+                    <VscAccount />
+                    <Link to="login" className="font-[300]">My Acount</Link>
+                  </>
+                }
+                { user?.accessToken && 
+                  <>
+                    <LiaUserTimesSolid />
+                    <button onClick={handleLogout}>Logout</button>
+                  </>
+                }
               </div>
             </div>
           </nav>
@@ -102,8 +109,7 @@ const Header = () => {
                   <span className="hidden md:block bg-[#303840] text-white rounded-full h-5 w-5 text-center text-sm">0</span>
                 </div>
                 <div className="group relaive" 
-                  onClick= {() => {setShowCart(true) 
-                    console.log(showCart)}}
+                  onClick= {() => { setShowCart(true) }}
                 >
                   <div className="flex">
                     <TfiShoppingCartFull 

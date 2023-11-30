@@ -11,11 +11,11 @@ const CreateAccount = () => {
     last_name: '',
     email: '',
     password: '',
-    birthDate: ''
+    username: ''
   })
   const navigate = useNavigate()
 
-  const hanndleChange = (event) => {
+  const handleChange = (event) => {
     const value = event.target.value
     const name  = event.target.name 
 
@@ -23,58 +23,75 @@ const CreateAccount = () => {
     console.log(form);
   }
 
-  const verifyEmail = async (url) => {
-    const email = form.email
+  // const verifyEmail = async (url) => {
+  //   const email = form.email
 
-    const response = await fetch(`${url}?email=${email}`)
-    const data = await response.json()
-    // console.log("En el everifuEmail", data);
-    return data
-  }
+  //   const response = await fetch(`${url}?email=${email}`)
+  //   const data = await response.json()
+  //   // console.log("En el everifuEmail", data);
+  //   return data
+  // }
 
   const handleSubmit = async (event) => {
+
     event.preventDefault()
 
-    const url = 'http://localhost:3000/usuarios'
+    const url = 'http://localhost:3000/users'
 
-    const detectedUser = await verifyEmail(url)
-    console.log("detected User", detectedUser);
+    const user = { ...form }
+    console.log("User enviado: ", user);
 
-    if (detectedUser.length === 1) {
-      Swal.fire({
-        title: 'Esta dirección de correo electrónico ya existe',
-        icon: 'warning',
-        confirmButtonColor: '#FAD505',
-        confirmButtonText: 'Iniciar sesión'
-      }).then(() => {
-        navigate('/my-account')
-      })
-    }else{
-      const user = {
-        ...form, 
-        id: crypto.randomUUID()
-      }
-  
-      const options = {
-        method: 'POST',
-        body: JSON.stringify(user),
-        headers: {
-          'Content-Type': 'application/json',
-        }
-      }
-  
-      const response = await fetch(url, options)
-      const data = await response.json()
-      console.log(data);
-
-      MySwal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'Usuario creado correctamente',
-        showConfirmButton: false,
-        timer: 1500
-      })
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(user)
     }
+
+    const response = await fetch(url, options)
+    const data = await response.json()
+    console.log(data);
+    navigate('/my-account')
+
+    // const detectedUser = await verifyEmail(url)
+    // console.log("detected User", detectedUser);
+
+    // if (detectedUser.length === 1) {
+    //   Swal.fire({
+    //     title: 'Esta dirección de correo electrónico ya existe',
+    //     icon: 'warning',
+    //     confirmButtonColor: '#FAD505',
+    //     confirmButtonText: 'Iniciar sesión'
+    //   }).then(() => {
+    //     navigate('/my-account')
+    //   })
+    // }else{
+    //   const user = {
+    //     ...form
+    //   }
+    //   console.log("User enviado: ", user);
+  
+    //   const options = {
+    //     method: 'POST',
+    //     body: JSON.stringify(user),
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     }
+    //   }
+  
+    //   const response = await fetch(url, options)
+    //   const data = await response.json()
+    //   console.log(data);
+
+    //   MySwal.fire({
+    //     position: 'top-end',
+    //     icon: 'success',
+    //     title: 'Usuario creado correctamente',
+    //     showConfirmButton: false,
+    //     timer: 1500
+    //   })
+    // }
 
   }
 
@@ -93,17 +110,17 @@ const CreateAccount = () => {
             type="text" 
             name="name" 
             required 
-            onChange={hanndleChange}
+            onChange={handleChange}
             className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"
           />
         </div>
         <div>
-          <label>Last name</label>
+          <label>Last Name</label>
           <input 
             type="text" 
             name="last_name" 
             required 
-            onChange={hanndleChange}
+            onChange={handleChange}
             className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"
           />
         </div>
@@ -113,7 +130,7 @@ const CreateAccount = () => {
             type="email" 
             name="email" 
             required 
-            onChange={hanndleChange}
+            onChange={handleChange}
             className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"
           />
         </div>
@@ -123,16 +140,17 @@ const CreateAccount = () => {
             type="password" 
             name="password" 
             required 
-            onChange={hanndleChange}
+            onChange={handleChange}
             className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"
           />
         </div>
         <div>
-          <label>Birthdate</label>
+          <label>User Name</label>
           <input 
-            type="date" 
-            name="birthDate" 
-            onChange={hanndleChange}
+            type="text" 
+            name="username" 
+            required
+            onChange={handleChange}
             className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"
           />
         </div>

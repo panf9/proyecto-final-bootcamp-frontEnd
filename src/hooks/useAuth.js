@@ -5,10 +5,21 @@ const useAuth = () => {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('auth')) || { email: '' })
 
     const isAuth = Boolean(user?.email)
+    
+    const setAuth = (user) => {
+        setUser(user)
+        localStorage.setItem('auth', JSON.stringify(user))
+    }
 
+    const logout = () => {
+        localStorage.removeItem('auth')
+    }
 
     return {
-        isAuth
+        user,
+        isAuth,
+        setAuth,
+        logout
     }
 }
 

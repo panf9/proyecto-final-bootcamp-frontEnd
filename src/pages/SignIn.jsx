@@ -1,13 +1,17 @@
 import { Link, useNavigate } from "react-router-dom"
-import { useState } from "react"
+import { useContext, useState } from "react"
 
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
+import { UserContext } from "../context/UserContext"
 
 const MySwal = withReactContent(Swal)
 
 
 const SignIn = () => {
+  const { storeUser } = useContext(UserContext)
+  const navigate = useNavigate()
+
   const [form, setForm] = useState({
     email: "",
     password: "",
@@ -15,7 +19,6 @@ const SignIn = () => {
 
   const [visible, setVisible] = useState(false)
 
-  const navigate = useNavigate()
 
   const handleChange = (event) => {
     const value = event.target.value 
@@ -29,24 +32,37 @@ const SignIn = () => {
     const email = form.email 
     const password = form.password
 
-    const url = `http://localhost:3000/usuarios?email=${email}&password=${password}`
-    const response = await fetch(url)
+    const user = {email, password}
+    console.log(user);
+
+    const url = 'http://localhost:3000/auth/signin'
+
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(user)
+    }
+
+    const response = await fetch(url, options)
     const data = await response.json()
-    // console.log(data);
-    setForm({email: '', password:''})
 
-    if (data.length === 1) {
-      const cloneData = { ...data[0] }
-      delete cloneData.password
+    console.log(data);
 
-      localStorage.setItem('auth', JSON.stringify(cloneData))
+    // setForm({email: '', password:''})
 
+    if (data.accessToken) {
+      console.log("Iniciaste sensión correctamente");
+
+      storeUser(data)
+      
       navigate('/')
     }else {
       MySwal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'Algún dato esta mal!',
+        text: data.message,
         confirmButtonColor: '#FAD505',
         footer: '<a href="">Vuela a intentarlo.</a>'
       })
@@ -56,6 +72,7 @@ const SignIn = () => {
   const handleClick = () => {
     setVisible(!visible)
   }
+
   return (
     <>
       <div>

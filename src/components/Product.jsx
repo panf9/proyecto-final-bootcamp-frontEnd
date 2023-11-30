@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import ProductPage from "../pages/ProductPage";
 
 const Product = ({ products }) => {
-  const { addProduct, totalItems } = useContext(UserContext)
+  const { addProduct, setShowCart } = useContext(UserContext)
 
   const handleCLick = (event) => {
     const id = event.currentTarget.dataset.id
@@ -19,17 +19,17 @@ const Product = ({ products }) => {
     const newObject = {id, name, price, qty, img}
 
     addProduct(newObject)
-    totalItems()
+    setShowCart(true)
   }
 
   return (
-    <div className="grid place-items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 relative z-0">
+    <>
       {products.map(product => {
           return (
             <div key={product.id} className="w-[234px] border group relative" >
               <Link to={`/products/${product.name.replaceAll(" ", "-")}`} element={<ProductPage />}>
                 <div className="flex h-[250px]">
-                  <img src={`${product.images.type_1.image_1}`} alt="" />
+                  <img src={`${product.image_1}`} alt="" />
                   <div className="w-72 absolute flex justify-between">
                     <div>
                       <div className={`${product.price<=product.price_desc? 'hidden':'display'}`}>
@@ -62,7 +62,7 @@ const Product = ({ products }) => {
                   data-id={product.id}
                   data-name={product.name}
                   data-price={product.price}
-                  data-img={product.images.type_1.image_1}
+                  data-img={product.image_1}
                   >
                   Add To Card
                 </button>
@@ -71,7 +71,7 @@ const Product = ({ products }) => {
           )
         })
       }
-    </div>
+    </>
   )
 }
 
