@@ -1,8 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import { UserContext } from "../context/UserContext"
 import { decodeToken } from "react-jwt";
-import { Link, useNavigate } from "react-router-dom";
-import  SignIn  from './SignIn'
+import { useNavigate } from "react-router-dom";
 
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
@@ -11,7 +10,7 @@ const MySwal = withReactContent(Swal)
 
 const Checkout = () => {
   const token = JSON.parse(localStorage.getItem('auth')) || null
-  const { productList } = useContext(UserContext)
+  const { productList, setTotalCart } = useContext(UserContext)
   const navigate = useNavigate()
   const [subTotal, setSubTotal] = useState(0)
   const [form, setForm] = useState({
@@ -25,7 +24,7 @@ const Checkout = () => {
     zip: '',
     address: '',
     address_comp: '',
-    subtotal: 0,
+    subTotal: 0,
     shipping: 10,
   })
 
@@ -36,19 +35,17 @@ const Checkout = () => {
       total = total + element.price * element.qty
     });
     setSubTotal(total)
-    setForm({ ...form, ['subTotal']: subTotal })
   }
 
   const handleChange = (event) => {
     const value = event.target.value
     const name  = event.target.name 
 
-    setForm({ ...form, [name]: value})
+    setForm({ ...form, [name]:value, "subTotal":subTotal })
   }
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-
     if (!token){
       MySwal.fire({
         icon: 'warning',
@@ -111,9 +108,10 @@ const Checkout = () => {
     console.log(response);
     const data = await response.json()
 
-    if ( data.id ){
-      localStorage.removeItem('product')
-      navigate('/tracking')
+    if ( data.user_id ){
+      localStorage.removeItem("product")
+      setTotalCart(0)
+      navigate('/tracking')            
     }
   }
 
@@ -271,7 +269,6 @@ const Checkout = () => {
                 <input 
                   type="text" 
                   name="addreess_comp" 
-                  required 
                   onChange={handleChange}
                   className="w-96 ml-3 border rounded-md h-12 pl-3 outline-0"
                 />

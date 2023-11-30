@@ -9,12 +9,12 @@ import { UserContext } from "../context/UserContext";
 const ProductPage = () => {
   const productName = useParams('/products/').productname.replaceAll("-", " ")
   const [product, setProduct] = useState({})
-  const [images, setImages] = useState()
-  const [click, setCLick] = useState(false)
-  const [img, setImg] = useState()
+  // const [images, setImages] = useState()
+  // const [click, setCLick] = useState(false)
+  // const [img, setImg] = useState()
   const [productsCat, setProductsCat] = useState([])
   const [qty, setQty] = useState(1)
-  const [keyImg, setKeyImg] = useState(1)
+  // const [keyImg, setKeyImg] = useState(1)
 
   const { addProduct, totalItems } = useContext(UserContext)
 
@@ -23,16 +23,15 @@ const ProductPage = () => {
     const name = event.currentTarget.dataset.name
     const price = event.currentTarget.dataset.price
     const img = event.currentTarget.dataset.img
-    const qtty = parseInt(event.currentTarget.dataset.qty)
 
-    const newObject = {id, name, price, qtty, img}
+    const newObject = {id, name, price, qty, img}
     console.log("Nuevo productos agregado ",newObject);
     addProduct(newObject)
-    totalItems()
+    totalItems
   }
 
   const productFind = async () => {
-    const url = "http://localhost:3000/productos"
+    const url = "http://localhost:3000/products"
     const response = await fetch(url)
     const data = await response.json()
     // console.log(data);
@@ -48,13 +47,23 @@ const ProductPage = () => {
     setProductsCat(prodCategories)
   }
 
-  const handleCLick = (event) => {
-    const img = event.currentTarget.dataset.img
-    const key = event.currentTarget.dataset.key
-    console.log(img);
-    setCLick(true)
-    setImg(img)
-    setKeyImg(key)
+  // const handleCLick = (event) => {
+  //   const img = event.currentTarget.dataset.img
+  //   const key = event.currentTarget.dataset.key
+  //   console.log(img);
+  //   setCLick(true)
+  //   setImg(img)
+  //   setKeyImg(key)
+  // }
+
+  const handlePlus = () => {
+    setQty(qty + 1)
+    console.log(qty);
+  }
+
+  const handleMinus = () => {
+    setQty(qty - 1)
+    console.log(qty);
   }
 
   useEffect(() => {
@@ -64,13 +73,13 @@ const ProductPage = () => {
 
   return (
     <>
-      {/* {JSON.stringify(product.images?.type_1.image_1)} */}
+      {/* {JSON.stringify(product)} */}
       <div className="flex w-[1170px] mx-auto mt-10">
         <div>
           <div className="flex">
             <div>
               <ul>
-                {
+                {/* {
                   // console.log("imagenes ", images)
                   images && 
                   Object.entries(images).map( entry => {
@@ -87,11 +96,21 @@ const ProductPage = () => {
                     </li>
                     )
                   })
-                } 
+                }  */}
+                <li className={`"outline outline-offset-1 outline-yellow-300": "outline-white-400"} w-20 mr-5 border-0 rounded-sm focus:ring-1`}>
+                  <img src={product.image_1} alt="" />
+                </li>
+                <li className={`"outline outline-offset-1 outline-yellow-300": "outline-white-400"} w-20 mr-5 border-0 rounded-sm focus:ring-1`}>
+                  <img src={product.image_2} alt="" />
+                </li>
+                <li className={`"outline outline-offset-1 outline-yellow-300": "outline-white-400"} w-20 mr-5 border-0 rounded-sm focus:ring-1`}>
+                  <img src={product.image_3} alt="" />
+                </li>
               </ul>
             </div>
             <div className="">
-            <img src={  click?img:`${product.images?.type_1.image_1}`} alt="" />
+            {/* <img src={  click?img:`${product.image_1}`} alt="" /> */}
+            <img src={product.image_1} alt="" />
             </div>
           </div>
         </div>
@@ -117,8 +136,8 @@ const ProductPage = () => {
           <div className="mt-5">
             <p>{product.desciption_short}</p>
           </div>
-          <div className={`${product.stock>0? "bg-green-300": "bg-red-300"} border rounded px-2 w-24 py-3 text-center`} >
-            <span >{product.stock>0? "In Stock": "Agotado"}</span>
+          <div className={`${product.sotck>0? "bg-green-300": "bg-red-300"} border rounded px-2 w-24 py-3 text-center`} >
+            <span >{product.sotck>0? "In Stock": "Agotado"}</span>
           </div>
           <div className="flex items-center">
             <div className="flex">
@@ -126,11 +145,11 @@ const ProductPage = () => {
               <div>
                 <BiChevronUp 
                   className="text-xl border-e border-t border-b rounded-se hover:bg-slate-100"
-                  onClick={() => {setQty(qty + 1)}}
+                  onClick={handlePlus}
                 />
                 <BiChevronDown 
                   className="text-xl border-e border-b rounded-ee hover:bg-slate-100"
-                  onClick={() => {setQty(qty - 1)}}
+                  onClick={handleMinus}
                 />
               </div>
             </div>

@@ -32,6 +32,10 @@ const ModalCart = ({ showCart, setShowCart}) => {
     setProductList(product_2)
   }
 
+  const handleButton = () => {
+    setShowCart(false)
+  }
+
   return (
     <>
     { showCart && 
@@ -88,13 +92,23 @@ const ModalCart = ({ showCart, setShowCart}) => {
                 </div>
                 <hr />
                 <div className="my-2 grid grid-cols-3 px-3 py-5">
-                    <button className="bg-[#FAD505] px-7 py-2 rounded text-sm">
-                      <Link to='/cart' element={<CartPage />}> View Cart</Link>
+                  <Link to='/cart' element={<CartPage />}>
+                    <button 
+                      className="bg-[#FAD505] px-7 py-2 rounded text-sm"
+                      onClick={handleButton}  
+                    >
+                      View Cart
                     </button>
-                    <div></div>
-                    <button className="bg-[#FAD505] px-7 py-2 rounded text-sm">
-                      <Link to='/checkout' element={<Checkout />}>CheckOut</Link>
+                  </Link>
+                  <div></div>
+                  <Link to='/checkout' element={<Checkout />}>
+                    <button 
+                      className="bg-[#FAD505] px-7 py-2 rounded text-sm"
+                      onClick={handleButton}
+                    >
+                      CheckOut
                     </button>
+                  </Link>
                 </div>
               </div>
             </div>
