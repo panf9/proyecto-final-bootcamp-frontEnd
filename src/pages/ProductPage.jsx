@@ -40,7 +40,7 @@ const ProductPage = () => {
 
     setProduct(currentProduct[0])
 
-    setImages(currentProduct[0].images.type_1)
+    // setImages(currentProduct[0].images.type_1)
 
     console.log("Cat actual", currentProduct[0].category);
     const prodCategories = data.filter(element => element.category === currentProduct[0].category && element.id !== currentProduct[0].id)
