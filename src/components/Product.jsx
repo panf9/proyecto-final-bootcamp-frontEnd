@@ -24,7 +24,7 @@ const Product = ({ products }) => {
 
   return (
     <>
-      {products.map(product => {
+      { products.map( product => {
           return (
             <div key={product.id} className="w-[234px] border group relative" >
               <Link to={`/products/${product.name.replaceAll(" ", "-")}`} element={<ProductPage />}>

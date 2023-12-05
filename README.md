@@ -37,3 +37,17 @@ Para una personalización total haremos uso de la librería **[Tailwindcss](3)**
 Nuestro proyecto será desarrollado usando la librería **[React](4)**
 
 [4]: https://es.react.dev/
+
+## Instalando el proyecto:
+
+Luego de clonar el proyecto ejecutamos el siguiente comando:
+
+```sh
+npm install
+```
+
+## Para ejecutar el proyecto:
+
+```sh
+npm run dev
+```
